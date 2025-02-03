@@ -1,4 +1,42 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Bebas Neue';
+}
+.menu-btn {
+  cursor: pointer;
+  width: 2.5em;
+}
+.top-bg-container {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 80% auto;
+  z-index: -1;
+}
+.light-streaks {
+  background: #B2DD9E url('assets/streaks.jpg');
+  background-blend-mode: screen;
+  background-size: cover;
+  height: 100vh;
+}
+.blue-col {
+  background: #7988BE;
 }
