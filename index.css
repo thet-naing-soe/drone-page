@@ -65,15 +65,15 @@ nav ul {
   top: 0;
   right: 0;
   height: 100vh;
-  background: #363B4E;
+  background: #363b4e;
   width: 66%;
   z-index: 2;
   transform: translateX(100%);
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 nav ul li a {
   display: block;
-  padding: .4em 1.5em;
+  padding: 0.4em 1.5em;
   color: white;
   font-size: 1.5rem;
   text-align: right;
@@ -140,14 +140,14 @@ h1 {
   height: 75vh;
 }
 .quote::before {
-  content: '';
+  content: "";
   position: absolute;
-  background: url('assets/stadium.jpg');
+  background: url("assets/stadium.jpg");
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  opacity: .17;
+  opacity: 0.17;
 }
 blockquote {
   margin: 0 0 2em 0;
@@ -159,11 +159,58 @@ cite {
   padding-left: 1.5em;
 }
 cite::before {
-  content: '';
+  content: "";
   position: absolute;
   background: white;
   width: 1em;
   border: 1px solid white;
   top: 50%;
   left: 0;
+}
+/* Section 2 */
+.gallery {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-bottom: 2em;
+}
+h2 {
+  font-size: 2.25rem;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.footage-content p {
+  font-size: 1.125rem;
+  font-family: "Montserrat";
+  line-height: 1.4;
+}
+.gallery-container {
+  display: grid;
+  grid-template-areas: 
+    ". a b"
+    "c d ."
+    ". e .";
+    margin-top: 2em;
+}
+.gallery-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+.gallery-container img:nth-child(1) {
+  grid-area: a;
+}
+.gallery-container img:nth-child(2) {
+  grid-area: b;
+}
+.gallery-container img:nth-child(3) {
+  grid-area: c;
+}
+.gallery-container img:nth-child(4) {
+  grid-area: d;
+}
+.gallery-container img:nth-child(5) {
+  grid-area: e;
 }
