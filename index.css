@@ -40,3 +40,50 @@ html, body {
 .blue-col {
   background: #7988BE;
 }
+.container {
+  margin: 0 1em;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  background: #000;
+  padding: .2em .4em;
+  color: white;
+  font-size: 1.8rem;
+}
+.logo span {
+  color: #6889FF;
+}
+ul {
+  display: none;
+}
+.content {
+  text-align: center;
+  margin: 8em 3em 0;
+  height: 75vh;
+}
+h1 {
+  font-size: 3rem;
+  line-height: 92%;
+  font-weight: normal;
+}
+.content p {
+  font-size: 1.125rem;
+  font-family: 'Montserrat';
+  line-height: 141.6%;
+}
+.drone-container {
+  position: relative;
+  width: 65%;
+  margin: 5em auto;
+}
+.blur,.drone {
+  position: absolute;
+  left: 0;
+}
+.blur {
+  top: 1em;
+  opacity: .5;
+}
