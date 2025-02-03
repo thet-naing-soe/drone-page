@@ -186,11 +186,11 @@ h2 {
 }
 .gallery-container {
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     ". a b"
     "c d ."
     ". e .";
-    margin-top: 2em;
+  margin-top: 2em;
 }
 .gallery-container img {
   object-fit: cover;
@@ -214,3 +214,57 @@ h2 {
 .gallery-container img:nth-child(5) {
   grid-area: e;
 }
+/* Section 3 */
+.contact {
+  background: #b2dd9e;
+}
+h3 {
+  padding: 1em 1em 1em 10%;
+  background: #9fc88c;
+  font-size: 2rem;
+  display: inline-block;
+  margin: 0;
+  font-weight: normal;
+}
+.cols-2 {
+  margin: 2em 2em 2em 10%;
+  width: 90%;
+  padding-right: 2em;
+  padding-bottom: 2em;
+}
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: .5em;
+}
+input {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 2em;
+  border: none;
+}
+button {
+  width: 100%;
+  padding:.8em;
+  background: #000;
+  color: white;
+  font-size: 1.3rem;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+.other-info {
+  margin-top: 3em;
+  width: 50%;
+}
+.other-info ul li {
+  padding: .5em;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  font-family: 'Montserrat';
+  font-size: .9rem;
+  border-radius: .2em;
+}
+.other-info ul li a{
+  color: #000;;
+}
+
