@@ -293,4 +293,22 @@ button {
   .type p {
     width: 80%;
   }
+  /* Nav  */
+  .menu-btn,.exit-btn {
+    display: none;
+  }
+  nav ul {
+    transform: translateX(0);
+    background: none;
+    position: unset;
+    width: unset;
+    display: flex;
+    height: auto;
+    padding-top: 1em;
+    padding-bottom: 0;
+  }
+  nav ul li a {
+    font-size: 1rem;
+    padding: 0 1em;
+  }
 }
