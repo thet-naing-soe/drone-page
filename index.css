@@ -110,6 +110,7 @@ h1 {
 .drone {
   position: absolute;
   left: 0;
+  z-index: 1;
 }
 .blur {
   top: 1em;
@@ -294,7 +295,8 @@ button {
     width: 80%;
   }
   /* Nav  */
-  .menu-btn,.exit-btn {
+  .menu-btn,
+  .exit-btn {
     display: none;
   }
   nav ul {
@@ -310,5 +312,48 @@ button {
   nav ul li a {
     font-size: 1rem;
     padding: 0 1em;
+  }
+  /* Section 1 */
+  .quote {
+    width: 80%;
+    display: grid;
+    place-content: center;
+  }
+  blockquote,
+  cite {
+    width: 50%;
+    justify-self: center;
+  }
+  blockquote {
+    font-size: 2rem;
+  }
+  /* Section 2 */
+  .gallery {
+    display: flex;
+    gap: 4em;
+  }
+  .gallery-container {
+    margin-top: -5em;
+    z-index: 1;
+  }
+  h2 {
+    font-size: 4rem;
+    line-height: 91.6%;
+    font-weight: normal;
+  }
+  /* Section 3 */
+  .cols-2 {
+    display: flex;
+    gap: 3em;
+  }
+  .form-container,
+  .other-info {
+    width: 50%;
+  }
+  .other-info {
+    margin-top: 2em;
+  }
+  input {
+    padding: 1.5em;
   }
 }
